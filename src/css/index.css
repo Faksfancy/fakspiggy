@@ -602,12 +602,17 @@ nav {
 }
 .million__body {
     max-width: 400px;
+    margin-bottom: 6rem;
 }
 .million__get .btn--small {
     padding: 1.5rem 2rem;
     transition: all 0.5s;
 }
-
+.million {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media screen and (min-width: 992px) {
     .million__get .btn--small:hover {
         border-color: black;
@@ -618,6 +623,20 @@ nav {
     .million__get {
         text-align: start;
     }
+    .million {
+        flex-direction: row;
+        width: 100%;
+    }
+    .million__body {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        order: 2;
+        margin-bottom: 0;
+    }
+    
+
 }
 
 /* showcase */
@@ -650,6 +669,19 @@ nav {
     padding: 1.5rem 1.5rem 1.8rem 1.5rem;
     background: var(--color-primary);
     margin-bottom: 1.5rem;
+}
+.showcase {
+    height: 45rem;
+    overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+    .showcase {
+        width: 50%;
+        overflow: hidden;
+        order: 1;
+        height: 45rem;
+    }
+
 }
 
 
