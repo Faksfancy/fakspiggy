@@ -95,8 +95,14 @@ a:hover {
     background-repeat: no-repeat;
     font-weight: 600;
 }
+.link--month {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 75%, rgba(255,255,255, 0.4) 15%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+}
 @media screen and (min-width: 992px) {
-    
+.link--month:hover,    
 .link--accent:hover,
 .link--secondary:hover {
     animation-name: line;
@@ -684,7 +690,80 @@ nav {
 
 }
 
-
+/* month */
+.month {
+    display: flex;
+    flex-direction: column;
+}
+.month__heading {
+    text-align: center;
+    font-size: 4rem;
+    margin: 1rem 0;
+    line-height: 1.3;
+    color: var(--color-secondary);
+}
+.month__body {
+    padding: 6rem 3rem 8rem 3rem;
+    background-color: blue;
+    color: var(--color-secondary);
+}
+.month__close {
+    display: flex;
+    justify-content: center;
+}
+.month__p {
+    text-align: center;
+    margin-top: 1.2rem;
+    line-height: 1.6;
+}
+.month__btn {
+    text-align: center;
+    margin-top: 5rem;
+}
+.month__bodytext {
+    max-width: 500px;
+}
+.bg {
+    width: 100%;
+    height: 40rem;
+    background: url(/src/image/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width: 992px) {
+    .month__heading,
+    .month__btn,
+    .month__p {
+        text-align: start;
+    }
+    .month__btn {
+        display: inline-block;
+        width: 155px;
+    }
+    .month__close {
+        justify-content: start;
+    }
+    .bg {
+        width: 45%;
+        height: auto;
+    }
+    .month__heading {
+        font-size: 5rem;
+    }
+    .month__body {
+        width: 55%;
+    }
+    .month {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1165px) {
+    .month__bodytext {
+        margin-right: 14%;
+        margin-left: auto;
+    }
+}
 
 
 
@@ -759,6 +838,7 @@ nav {
 .last__footer p:nth-child(2) {
     color: blue;
 }
+
 @media screen and (min-width: 992px) {
     .footer__list a:hover {
         color: blue;
