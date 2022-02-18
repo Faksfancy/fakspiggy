@@ -821,7 +821,7 @@ nav {
         column-gap: 10%;
     }
 }
-@media screen and (min-width: 1042) and (max-width: 1108px) {
+@media screen and (min-width: 1042px) and (max-width: 1108px) {
     .grid {
         column-gap: 8%;
     }
